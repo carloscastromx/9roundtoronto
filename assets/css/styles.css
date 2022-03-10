@@ -2,8 +2,61 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 html{
     scroll-behavior: smooth;
     font-size: 62.5%;
+}
+/*Responsive font-sizes for headings*/
+h1{
+	font-size: clamp(calc(calc(calc(calc( 1.4 *  1.2) *  1.2) *  1.2) * 1rem), calc(calc(calc(calc( 1.4 *  1.2) *  1.2) *  1.2) * 1rem + ((1vw - ( 32 / 100) * 1rem) * (100 * (calc(calc(calc( 1.8 *  1.333) *  1.333) *  1.333) - calc(calc(calc( 1.4 *  1.2) *  1.2) *  1.2)) / ( 128 -  32)))), calc(calc(calc(calc( 1.8 *  1.333) *  1.333) *  1.333) * 1rem));
+}
+h2{
+	font-size: clamp(calc(calc(calc( 1.4 *  1.2) *  1.2) * 1rem), calc(calc(calc( 1.4 *  1.2) *  1.2) * 1rem + ((1vw - ( 32 / 100) * 1rem) * (100 * (calc(calc( 1.8 *  1.333) *  1.333) - calc(calc( 1.4 *  1.2) *  1.2)) / ( 128 -  32)))), calc(calc(calc( 1.8 *  1.333) *  1.333) * 1rem));
+}
+h3{
+	font-size: clamp(calc(calc( 1.4 *  1.2) * 1rem), calc(calc( 1.4 *  1.2) * 1rem + ((1vw - ( 32 / 100) * 1rem) * (100 * (calc( 1.8 *  1.333) - calc( 1.4 *  1.2)) / ( 128 -  32)))), calc(calc( 1.8 *  1.333) * 1rem));
+}
+h4{
+	font-size: clamp(calc( 1.4 * 1rem), calc( 1.4 * 1rem + ((1vw - ( 32 / 100) * 1rem) * (100 * ( 1.8 -  1.4) / ( 128 -  32)))), calc( 1.8 * 1rem));
+}
+h5{
+	font-size: max(1.1rem, clamp(calc(calc( 1.4 /  1.2) * 1rem), calc(calc( 1.4 /  1.2) * 1rem + ((1vw - ( 32 / 100) * 1rem) * (100 * (calc( 1.8 /  1.333) - calc( 1.4 /  1.2)) / ( 128 -  32)))), calc(calc( 1.8 /  1.333) * 1rem)));
+}
+h6{
+	font-size: max(1rem, clamp(calc(calc(calc( 1.4 /  1.2) /  1.2) * 1rem), calc(calc(calc( 1.4 /  1.2) /  1.2) * 1rem + ((1vw - ( 32 / 100) * 1rem) * (100 * (calc(calc( 1.8 /  1.333) /  1.333) - calc(calc( 1.4 /  1.2) /  1.2)) / ( 128 -  32)))), calc(calc(calc( 1.8 /  1.333) /  1.333) * 1rem)));
+}
+body{
+    font-size: clamp(calc( 1.4 * 1rem), calc( 1.4 * 1rem + ((1vw - ( 32 / 100) * 1rem) * (100 * ( 1.8 - 1.4) / ( 128 - 32)))), calc( 1.8 * 1rem));
+}
+/*Color variables*/
+:root{
+    --red: #c8102e;
+    --black: #212529;
+    --white: #f5f5f5;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+header .container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+header .logo{
+    max-width: 160px;
+}
+header h1{
+    font-size: 2.6rem;
+}
+header a{
+    background-color: var(--red);
+    text-decoration: none;
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 8px;
 }
