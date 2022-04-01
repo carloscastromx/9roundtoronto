@@ -1,5 +1,5 @@
 # 9Round Toronto
-Website for 9Round Toronto Bayview Ave
+Simple Landing Page for 9Round Toronto Bayview Ave Gym
 
 Built using HTML & CSS.
 
